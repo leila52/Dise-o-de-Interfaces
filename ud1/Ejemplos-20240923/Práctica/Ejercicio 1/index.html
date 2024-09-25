@@ -1,32 +1,49 @@
 <html>
 <head>
     <style>
+        /**/
+        /*el fondo del cuerpo es la imagen y es fija y no se mueve al hacer scroll y el color del texto es blanco*/
         body {
+            /* Fondo de la página con una imagen */
             background-image:
                 url("fondo.jpg");
+            /* Imagen de fondo fija al hacer scroll */
             background-attachment: fixed;
             color: white;
         }
 
         div#enlaces {
+            /* Fijado en una posición estable, no cambia al hacer scroll */
             position: fixed;
+            /* Posicionado al 40% desde la parte superior de la pantalla */
             top: 40%;
+            /* Pegado a la izquierda de la pantalla */
             left: 0px;
+            /* Ocupa el 17% del ancho de la pantalla */
             width: 17%;
         }
 
         div#contenido {
+            /* El contenido ocupa el 80% del ancho de la pantalla */
             width: 80%;
+            /* Posición absoluta en relación con su contenedor */
             position: absolute;
+            /* Comienza desde la parte superior de la página */
             top: 0px;
+            /* Alineado al lado derecho de la pantalla */
             right: 0px;
         }
 
         img {
+            /* La imágen ocuparán el 25% del ancho de su contenedor */
             width: 25%;
+            /*borde negro alrededor de la imagen*/
             border: solid black 1px;
+            /* Espacio de 4px entre la imagen y su borde */
             padding: 4px;
+            /* La imagen se comporta como un bloque, permitiendo centrarla */
             display: block;
+            /*magenes automatico para centrar la imagen*/
             margin-left: auto;
             margin-right: auto;
         }
