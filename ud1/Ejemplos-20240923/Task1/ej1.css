@@ -1,0 +1,81 @@
+#cuerpo{
+    border: solid 1px black;
+    width: 100%;
+}
+/*tiene q ser fija*/
+#cabecera{
+    position: fixed;/*para que se mueva con el usuario*/
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+#cabecera div{
+    padding: 5px;
+    border: 2px solid black;
+    width: 30%;
+    text-align: center;
+    margin: 7px;
+}
+#cabecera div:hover{
+    background-color: rgb(50, 162, 170);
+}
+#contenedor1{
+    border: 2px solid black;
+    /*
+    display: flex;*/
+    padding-top: 70px;
+}
+#imagenes{
+    border: 2px solid black;
+    /*asi se diferencia con el texto*/
+    width: 30%;
+}
+.columna{
+    border: 3px solid rgb(254, 254, 254);
+    display: flex;
+    /*los espacios de columna */
+    gap: 10px;
+}
+.columna img{
+    width: 100px;
+    height: 100px;
+}
+#texto{
+    border: 2px solid black;
+    width: 70%;
+    /*es para que no este pegado al borde*/
+    padding-left: 20px;
+}
+#texto,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2;
+}
+#texto,p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#onepice img{
+    border: 2px solid black;
+    width: 500px;
+    margin: 15px;
+}
+#onepice{
+    border: 2px solid black;
+    text-align: center;
+    padding: 25px;
+}
+#choper{
+    border: 2px solid black;
+}
+
+#formulario{
+    padding: 15px;
+}
+#formulario form {
+    flex-direction: column;
+}
+#formulario input{
+    padding: 5px;
+    width: 50px;
+}
