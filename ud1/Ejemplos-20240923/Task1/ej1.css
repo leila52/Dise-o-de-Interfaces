@@ -1,6 +1,6 @@
+
 #cuerpo{
-    border: solid 1px black;
-    width: 100%;
+    width: 90%;
 }
 /*tiene q ser fija*/
 #cabecera{
@@ -12,35 +12,39 @@
     width: 95%;
     padding: 5px;
     margin: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 #cabecera div{
-    padding: 5px;
+    padding: 10px;
     border: 2px solid black;
     width: 30%;
     text-align: center;
-    margin: 7px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 1%;
 }
 #cabecera div:hover{
     background-color: rgb(50, 162, 170);
 }
 #contenedor1{
-    border: 2px solid black;
     display: flex;
     padding-top: 70px;
+    margin-top: 50px;
+    margin-left: 20%;
 }
 #imagenes{
     border: 2px solid black;
     /*asi se diferencia con el texto*/
-    padding-right: 20px;
-    width: 30%;
+    padding-right: 10px;
+    width: 50%;
+    overflow: hidden;
 }
 .columna{
     border: 3px solid rgb(254, 254, 254);
-    /*el display para q se junten la dos columnas*/
-    display: flex;
-
     /*los espacios de columna */
-    gap: 10px;
+    gap: 20px;
 }
 .columna img{
     width: 100px;
@@ -48,39 +52,56 @@
 }
 #texto{
     border: 2px solid black;
-    width: 70%;
+    width: 50%;
     /*es para que no este pegado al borde*/
     padding-left: 20px;
+    margin-left: 30px;
 }
-#texto,h2{
+#texto h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2;
+    color: rgb(41, 69, 230);
+    
 }
 #texto,p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
+.h2{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    color: blue;
+}
 #onepice img{
     border: 2px solid black;
     width: 500px;
-    margin: 15px;
+    /*asi se ve el borde de la imagen*/
+    padding: 10px;
+    margin: 30px;
 }
 #onepice{
-    border: 2px solid black;
-    text-align: center;
-    padding: 25px;
+    padding: 35px;
+    margin-top: 20px;
+    /*para centrarlo*/
+    margin-left: 20%;
+
 }
 #choper{
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 #formulario{
     padding: 15px;
+    margin-left: 20%;
 }
 #formulario form {
-    flex-direction: column;
+    border: 3px solid black;
 }
 #formulario input{
     padding: 5px;
-    width: 50px;
+    width: 70px;
+    margin-top: 10px;
+}
+#formulario label{
+    margin: 5%;
 }
