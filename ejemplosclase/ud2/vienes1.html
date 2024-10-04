@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ejercicio</title>
+    <style>
+        div {
+            border: solid 2px;
+        }
+
+        #contenedor1 {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            /*se pone el auto si hay texto ya que asi se modifica solo y se rellena toda la caja del texto*/
+            grid-template-rows: auto 20% 20% 20% 20%;
+            width: 100%;
+            height: 1000px
+        }
+        #c1{
+           /* grid-column: 2/4;*/
+           grid-column: 1/6;
+           grid-row: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor1">
+        <div id="c1">caja1</div>
+    </div>
+</body>
+
+</html>
