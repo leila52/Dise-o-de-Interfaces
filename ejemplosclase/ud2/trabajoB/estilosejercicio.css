@@ -1,0 +1,140 @@
+div {
+    border: solid 1px;
+}
+
+#header {
+    background: white;
+    width: 100%;
+    position: fixed;
+    height: 150px;
+    top: 0px;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 1000%);
+    text-align: center;
+}
+
+#header > a {
+    display: inline-block;
+}
+
+#boton {
+    padding-top: 20px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+a:hover {
+    background: gray;
+    color: white;
+}
+
+#contenedor {
+    border: solid 1px color burlywood;
+    grid-template-columns:47.5% 5% 47.5%;
+    grid-template-rows: 10% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    margin-top: 150px;
+    height: 600px;
+
+}
+#celda1 {
+    width: 47%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    float: left;
+}
+#celda2 {
+    grid-row: 2/3;
+
+    grid-column: 3/4;
+    height: 600px;
+    float: right;
+    width: 40%;
+    overflow: hidden;
+
+}
+
+#celdaimagen1,
+#celdaimagen2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#img1,
+#img4 {
+    float: left;
+    width: 47%;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img3,
+#img2 {
+    float: right;
+    width: 47%;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+#img1 {
+    background-image: url(bobesponja1.jpg)
+}
+
+#img2 {
+    background-image: url(bobesponja2.jpg)
+}
+
+#img3 {
+    background-image: url(bobesponja3.jpg)
+}
+
+#img4 {
+    background-image: url(bobesponja4.jpg)
+}
+
+#poke {
+    border: 5px solid black;
+    width: 40%;
+}
+
+#pokeball {
+    margin-top: 610px;
+    text-align: center;
+}
+
+#pokeballC {
+    height: auto;
+    text-align: center;
+}
+
+#formulario {
+    text-align: center;
+    
+}
+
+#formularioC {
+    height: 300px;
+    margin-left: 15%;
+}
+
+
+form > button {
+    width: 20%;
+    height: 300px;
+    float:left;
+    
+}
+
+fieldset {
+    height: 280px;
+    text-align: left;
+    float:left;
+    width: 60%;
+}
