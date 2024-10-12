@@ -1,0 +1,549 @@
+#contenedor1 {
+    display: grid;
+    grid-template-columns: 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76% 4.76%;
+    grid-template-rows: 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16% 4.16%;
+    width: 300px;
+    height: 300px;
+}
+#c1{
+    grid-row: 2/3;
+    grid-column: 7/16;
+    background-color: black;
+}
+#c2{
+    grid-row: 3/4;
+    grid-column: 5/7;
+    background-color: black;
+}
+#c3{
+    grid-row: 3/4;
+    grid-column: 16/18;
+    background-color: black;
+}
+#c4{
+    grid-row: 4/5;
+    grid-column: 4/5;
+    background-color: black;
+}
+#c5{
+    grid-row: 4/5;
+    grid-column: 18/19;
+    background-color: black;
+}
+#c6{
+    grid-row: 5/7;
+    grid-column: 3/4;
+    background-color: black;
+}
+#c7{
+    grid-row: 5/7;
+    grid-column: 19/20;
+    background-color: black;
+}
+#c8{
+    grid-row: 7/12;
+    grid-column: 2/3;
+    background-color: black;
+}
+#c9{
+    grid-row: 7/12;
+    grid-column: 20/21;
+    background-color: black;
+}
+#c10{
+    grid-row: 12/13;
+    grid-column: 3/4;
+    background-color: black;
+}
+#c11{
+    grid-row: 12/13;
+    grid-column: 19/20;
+    background-color: black;
+}
+#c12{
+    /* no he puesto el ojo salvo los q estan unidos a los bordes*/
+    grid-row: 13/14;
+    grid-column: 4/6;
+    background-color: black;
+}
+#c13{
+    grid-row: 13/14;
+    grid-column: 17/19;
+    background-color: black;
+}
+#c14{
+    grid-row: 14/15;
+    grid-column: 6/7;
+    background-color: black;
+}
+#c15{
+    grid-row: 14/15;
+    grid-column: 16/17;
+    background-color: black;
+}
+#c16{
+    grid-row: 15/16;
+    grid-column: 7/8;
+    background-color: black;
+}
+#c17{
+    grid-row: 15/16;
+    grid-column: 15/16;
+    background-color: black;
+}
+#c18{
+    grid-row: 16/17;
+    grid-column: 16/17;
+    background-color: black;
+}
+#c19{
+    grid-row: 16/17;
+    grid-column: 6/7;
+    background-color: black;
+}
+#c20{
+    grid-row: 17/18;
+    grid-column: 5/6;
+    background-color: black;
+}
+#c21{
+    grid-row: 17/18;
+    grid-column: 17/18;
+    background-color: black;
+}
+#c22{
+    grid-row: 18/20;
+    grid-column: 4/5;
+    background-color: black;
+}
+#c23{
+    grid-row: 18/20;
+    grid-column: 18/19;
+    background-color: black;
+}
+/* no entra la narix*/
+#c24{
+    grid-row: 20/21;
+    grid-column: 5/8;
+    background-color: black;
+}
+#c25{
+    grid-row: 20/21;
+    grid-column: 15/18;
+    background-color: black;
+}
+#c26{
+    grid-row: 21/22;
+    grid-column: 8/9;
+    background-color: black;
+}
+#c27{
+    grid-row: 21/22;
+    grid-column: 14/15;
+    background-color: black;
+}
+#c28{
+    grid-row: 22/23;
+    grid-column: 9/10;
+    background-color: black;
+}
+#c29{
+    grid-row: 22/23;
+    grid-column: 13/14;
+    background-color: black;
+}
+#c30{
+    grid-row: 23/24;
+    grid-column: 10/13;
+    background-color: black;
+}
+#c31{
+    grid-row: 3/4;
+    grid-column: 7/16;
+    background-color: rgb(139, 177, 156);
+}
+#c32{
+    grid-row: 4/5;
+    grid-column: 5/18;
+    background-color: rgb(139, 177, 156);
+}
+#c33{
+    grid-row: 5/6;
+    grid-column: 4/8;
+    background-color:  rgb(139, 177, 156);
+}
+#c34{
+    grid-row: 5/6;
+    grid-column: 8/15;
+    background-color: rgb(0, 0, 0);
+}
+#c35{
+    grid-row: 5/6;
+    grid-column: 15/19;
+    background-color:  rgb(139, 177, 156);
+}
+#c36{
+    grid-row: 6/7;
+    grid-column: 4/7;
+    background-color:  rgb(139, 177, 156);
+}
+#c37{
+    grid-row: 6/7;
+    grid-column: 7/8;
+    background-color: rgb(0, 0, 0);
+}
+#c38{
+    grid-row: 6/7;
+    grid-column: 8/15;
+    background-color:   rgb(139, 177, 156);
+}
+#c39{
+    grid-row: 6/7;
+    grid-column: 15/16;
+    background-color: rgb(0, 0, 0);
+}
+#c40{
+    grid-row: 6/7;
+    grid-column: 16/19;
+    background-color:  rgb(139, 177, 156);
+}
+#c41{
+    grid-row: 7/8;
+    grid-column: 3/9;
+    background-color: rgb(139, 177, 156);
+}
+#c42{
+    grid-row: 7/8;
+    grid-column: 9/14;
+    background-color: rgb(0, 0, 0);
+}
+#c43{
+    grid-row: 7/8;
+    grid-column: 14/20;
+    background-color:  rgb(139, 177, 156);
+}
+#c44{
+    grid-row: 8/9;
+    grid-column: 3/20;
+    background-color:  rgb(139, 177, 156);
+}
+#c45{
+    grid-row: 9/10;
+    grid-column: 3/8;
+    background-color:  rgb(139, 177, 156);
+}
+#c46{
+    grid-row: 9/10;
+    grid-column: 8/10;
+    background-color: rgb(0, 0, 0);
+}
+#c47{
+    grid-row: 9/10;
+    grid-column: 10/13;
+    background-color:  rgb(139, 177, 156);
+}
+#c48{
+    grid-row: 9/10;
+    grid-column: 13/15;
+    background-color: rgb(0, 0, 0);
+}
+#c49{
+    grid-row: 9/10;
+    grid-column: 15/20;
+    background-color:  rgb(139, 177, 156);
+}
+#c50{
+    grid-row: 10/11;
+    grid-column: 3/7;
+    background-color:  rgb(139, 177, 156);
+}
+#c51{
+    grid-row: 10/11;
+    grid-column: 7/8;
+    background-color: rgb(0, 0, 0);
+}
+#c52{
+    grid-row: 10/11;
+    grid-column: 8/9;
+    background-color: rgb(232, 231, 157);
+}
+#c53{
+    grid-row: 10/11;
+    grid-column: 9/10;
+    background-color: rgb(235, 233, 64);
+}
+#c54{
+    grid-row: 10/11;
+    grid-column: 10/11;
+    background-color: rgb(0, 0, 0);
+}
+#c55{
+    grid-row: 10/11;
+    grid-column: 11/12;
+    background-color:  rgb(139, 177, 156);
+}
+#c56{
+    grid-row: 10/11;
+    grid-column: 12/13;
+    background-color: rgb(0, 0, 0);
+}
+#c57{
+    grid-row: 10/11;
+    grid-column: 13/14;
+    background-color: rgb(232, 231, 157);
+}
+#c58{
+    grid-row: 10/11;
+    grid-column: 14/15;
+    background-color: rgb(235, 233, 64);
+}
+#c59{
+    grid-row: 10/11;
+    grid-column: 15/16;
+    background-color: rgb(0, 0, 0);
+}
+#c60{
+    grid-row: 10/11;
+    grid-column: 16/20;
+    background-color:  rgb(139, 177, 156);
+}
+#c61{
+    grid-row: 11/12;
+    grid-column: 3/6;
+    background-color:  rgb(139, 177, 156);
+}
+#c62{
+    grid-row: 12/13;
+    grid-column: 4/6;
+    background-color:  rgb(139, 177, 156);
+}
+#c63{
+    grid-row: 11/15;
+    grid-column: 6/7;
+    background-color: rgb(0, 0, 0);
+}
+#c64{
+    grid-row: 11/14;
+    grid-column: 7/8;
+    background-color: rgb(232, 231, 157);
+}
+#c65{
+    grid-row: 14/15;
+    grid-column: 7/8;
+    background-color: rgb(235, 233, 64);
+}
+#c66{
+    grid-row: 11/15;
+    grid-column: 8/9;
+    background-color: rgb(232, 231, 157);
+}
+#c67{
+    grid-row: 11/12;
+    grid-column: 9/10;
+    background-color: rgb(232, 231, 157);
+}
+#c68{
+    grid-row: 12/14;
+    grid-column: 9/10;
+    background-color: rgb(0, 0, 0);
+}
+#c69{
+    grid-row: 14/16;
+    grid-column: 9/10;
+    background-color: rgb(235, 233, 64);
+}
+#c70{
+    grid-row: 15/16;
+    grid-column: 8/9;
+    background-color: rgb(235, 233, 64);
+}
+#c71{
+    grid-row: 11/15;
+    grid-column: 10/11;
+    background-color: rgb(235, 233, 64);
+}
+#c72{
+    grid-row: 15/16;
+    grid-column: 10/11;
+    background-color: rgb(0, 0, 0);
+}
+#c72{
+    grid-row: 16/17;
+    grid-column: 8/9;
+    background-color: rgb(0, 0, 0);
+}
+#c73{
+    grid-row: 16/18;
+    grid-column: 9/10;
+    background-color: rgb(0, 0, 0);
+}
+#c74{
+    grid-row: 18/21;
+    grid-column: 8/9;
+    background-color: rgb(0, 0, 0);
+}
+#c75{
+    grid-row: 18/19;
+    grid-column: 7/8;
+    background-color: rgb(0, 0, 0);
+}
+#c76{
+    grid-row: 11/15;
+    grid-column: 11/12;
+    background-color: rgb(0, 0, 0);
+}
+#c77{
+    grid-row: 15/16;
+    grid-column: 10/11;
+    background-color: rgb(0, 0, 0);
+}
+#c78{
+    grid-row: 15/16;
+    grid-column: 12/13;
+    background-color: rgb(0, 0, 0);
+}
+#c79{
+    grid-row: 11/14;
+    grid-column: 12/13;
+    background-color:  rgb(232, 231, 157);
+}
+#c80{
+    grid-row: 14/15;
+    grid-column: 12/13;
+    background-color:  rgb(235, 233, 64);
+}
+#c81{
+    grid-row: 10/12;
+    grid-column: 13/14;
+    background-color:  rgb(232, 231, 157);
+}
+#c82{
+    grid-row: 12/14;
+    grid-column: 13/14;
+    background-color:  rgb(0, 0, 0);
+}
+#c83{
+    grid-row: 14/15;
+    grid-column: 13/14;
+    background-color:  rgb(232, 231, 157);
+}
+#c84{
+    grid-row: 15/16;
+    grid-column: 13/15;
+    background-color:  rgb(235, 233, 64);
+}
+#c85{
+    grid-row: 14/15;
+    grid-column: 14/16;
+    background-color:  rgb(235, 233, 64);
+}
+#c86{
+    grid-row: 11/14;
+    grid-column: 15/16;
+    background-color:  rgb(235, 233, 64);
+}
+#c87{
+    grid-row: 11/14;
+    grid-column: 14/15;
+    background-color:  rgb(232, 231, 157);
+}
+#c88{
+    grid-row: 11/14;
+    grid-column: 16/17;
+    background-color:  rgb(0, 0, 0);
+}
+#c89{
+    grid-row: 11/12;
+    grid-column: 17/20;
+    background-color:  rgb(139, 177, 156);
+}
+#c90{
+    grid-row: 12/13;
+    grid-column: 17/19;
+    background-color:  rgb(139, 177, 156);
+}
+#c95{
+    grid-row: 15/23;
+    grid-column: 11/12;
+    background-color:  rgb(139, 177, 156);
+}
+#c91{
+    grid-row: 16/23;
+    grid-column: 10/11;
+    background-color:  rgb(139, 177, 156);
+}
+#c92{
+    grid-row: 16/23;
+    grid-column: 12/13;
+    background-color:  rgb(139, 177, 156);
+}
+#c93{
+    grid-row: 18/22;
+    grid-column: 9/10;
+    background-color:  rgb(139, 177, 156);
+}
+#c94{
+    grid-row: 18/22;
+    grid-column: 13/14;
+    background-color:  rgb(139, 177, 156);
+}
+#c96{
+    grid-row: 18/21;
+    grid-column: 14/15;
+    background-color: rgb(0, 0, 0);
+}
+#c97{
+    grid-row: 18/19;
+    grid-column: 15/16;
+    background-color: rgb(0, 0, 0);
+}
+#c98{
+    grid-row: 19/20;
+    grid-column: 15/18;
+    background-color: rgb(139, 177, 156);
+}
+#c99{
+    grid-row: 18/19;
+    grid-column: 16/18;
+    background-color:  rgb(139, 177, 156);
+}
+#c100{
+    grid-row: 18/19;
+    grid-column: 5/7;
+    background-color:  rgb(139, 177, 156);
+}
+#c101{
+    grid-row: 19/20;
+    grid-column: 5/8;
+    background-color:  rgb(139, 177, 156);
+}
+#c102{
+    grid-row: 17/18;
+    grid-column: 6/9;
+    background-color:  rgb(139, 177, 156);
+}
+#c103{
+    grid-row: 16/17;
+    grid-column: 7/8;
+    background-color:  rgb(139, 177, 156);
+}
+#c104{
+    grid-row: 16/17;
+    grid-column: 15/16;
+    background-color:  rgb(139, 177, 156);
+}
+#c105{
+    grid-row: 17/18;
+    grid-column: 14/17;
+    background-color:  rgb(139, 177, 156);
+}
+#c106{
+    grid-row: 16/17;
+    grid-column: 13/15;
+    background-color: rgb(0, 0, 0);
+}
+#c107{
+    grid-row: 17/18;
+    grid-column: 13/14;
+    background-color: rgb(0, 0, 0);
+}

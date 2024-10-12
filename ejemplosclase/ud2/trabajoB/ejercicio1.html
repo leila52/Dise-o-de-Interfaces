@@ -4,16 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task1</title>
-    <link rel="stylesheet" href="ej1.css">
+    <link rel="stylesheet" href="CSS/ej1.css" />
+    <!--<link rel="stylesheet" href="CSS/pixel.css" />-->
 
+    <title>Task1</title>
 </head>
 
 <body>
-    <div id="cabecera">
-        <div class="boton1"><a href="#inicio">inicio</a></div>
-        <div class="boton2"><a href="#horario">horario</a></div>
-        <div class="boton3"> <a href="#formulario">formulario</a></div>
+    <div id="header">
+        <br><br><br>
+        <a href="#Inicio">
+            <div id="boton">Inicio</div>
+        </a>
+        <a href="#Tablas">
+            <div id="boton">Horario</div>
+        </a>
+        <a href="#Formularios">
+            <div id="boton">Formulario</div>
+        </a>
     </div>
     <div id="cuerpo">
         <div id="colum1"></div>
@@ -55,18 +63,44 @@
         </div>
         <!--pixel-->
         <div id="onepice">
-            <div id="calamardo">
+            <div id="pokeball">
                 <h1>Calamardo</h1>
-                <a id="Tablas"></a>
+            <a id="Tablas"></a>
             </div>
-            <div id="calamardohtml">
-                <ej1 class="html"></ej1>
+            <div id="pokeballC">
+                <img id="poke" src="calamardo.png">
             </div>
         </div>
+       
         <!--formulario-->
-        <div id="formulario">
-        </div>
+        <div id="formulariocampo">
+            <div id="formulario">
+                <h1>FORMULARIO</h1>
+                <a id="Formularios"></a>
+            </div>
+            <div id="formularioC">
+                <form>
+                    <fieldset>
+                        <legend>Datos de Pago</legend>
+                        <p><span style="color: red;">*</span> Indica un campo Obligatorio</p>
+                        <span style="color: red;">*</span> Nombre del titular de la tarjeta:
+                        <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" required><br><br>
 
+                        <span style="color: red;">*</span> Número de la Tarjeta:
+                        <input type="text" id="numero-tarjeta" name="numero-tarjeta" required><br><br>
+
+                        <span style="color: red;">*</span> Fecha de vencimiento:
+                        <input type="month" id="fecha-vencimiento" name="fecha-vencimiento" required><br><br>
+
+                        <span style="color: red;">*</span> CCV:
+                        <input type="text" id="ccv" name="ccv" maxlength="4" required><br><br>
+                    </fieldset>
+                    <button type="submit" value="Enviar">Enviar</button>
+
+                </form>
+            </div>
+
+        </div>
     </div>
 </body>
 
