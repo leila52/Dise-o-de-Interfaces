@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among </title>
+    <style>
+        .contenedor {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .lado {
+            display: flex;
+            border: solid 1px;
+            flex-direction: row;
+            width: 200px;
+            height: 550px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+        }
+
+        .lado1 {
+            display: flex;
+            border: solid 1px;
+            flex-direction: column;
+            width: 200px;
+            height: 900px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+        }
+
+        .lado2 {
+            display: flex;
+            border: solid 1px;
+            flex-direction: column;
+            width: 200px;
+            height: 800px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+        }
+
+        .gafa {
+            display: flex;
+            border: solid 1px;
+            flex-direction: column;
+            width: 10px;
+            height: 300px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+        }
+
+        .itm {
+            height: 100px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .itm2 {
+            height: 100px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #mochila {
+            border: solid 1px;
+            height: 350px;
+            width: 125px;
+            background-color: rgb(216, 154, 154);
+            /*flex de moxhila*/
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        #id1{
+            border: solid 1px;
+            height: 15px;
+            width: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+        #id2{
+            height: 15px;
+            width: 100px;
+            background-color: rgb(255, 25, 25);
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        #idlado1{
+            height: 15px;
+            width: 35px;
+            background-color: rgb(0, 0, 0);
+        }
+        #id3{
+            border: solid 1px;
+            height: 15px;
+            width: 125px;
+            background-color: rgb(255, 19, 19);
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        #idlado2{
+            height: 15px;
+            width: 40px;
+            background-color: rgb(0, 0, 0);
+        }
+        #id4{
+            border: solid 1px;
+            height: 15px;
+            width: 125px;
+            background-color: rgb(19, 94, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #idlado3{
+            height: 15px;
+            width: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+        #idlado4{
+            height: 15px;
+            width: 20px;
+            background-color: rgb(233, 199, 199);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="lado">
+            <div class="itm"></div>
+            <div class="itm2"></div>
+            <div id="mochila">
+                <div id="id1">1</div>
+                <div id="id2">
+                    <div id="idlado1"></div>
+                </div>
+                <div id="id3">
+                    <div id="idlado2"></div>
+                </div>
+                <div id="id4">
+                    <div id="idlado3"></div>
+                    <div id="idlado4"></div>
+                </div>
+                <div id="id5">2</div>
+                <div id="id6">3</div>
+                <div id="id7">1</div>
+                <div id="id8">2</div>
+                <div id="id9">3</div>
+                <div id="10">1</div>
+                <div id="11">2</div>
+                <div id="12">3</div>
+                <div id="13">1</div>
+                <div id="14">2</div>
+                <div id="15">3</div>
+
+            </div>
+
+        </div>
+        <div class="lado1">
+            <div class="itm1">1</div>
+            <div class="a">2</div>
+            <div class="b">3</div>
+
+        </div>
+        <div class="lado2">
+            <div class="c">1</div>
+            <div class="d">2</div>
+            <div class="e">3</div>
+
+        </div>
+        <div class="gafa">
+            <div class="c">1</div>
+            <div class="d">2</div>
+            <div class="e">3</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
