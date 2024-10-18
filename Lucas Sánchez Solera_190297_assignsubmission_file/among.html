@@ -5,668 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Among </title>
-    <style>
-        .contenedor {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .lado {
-            display: flex;
-            border: solid 1px;
-            flex-direction: row;
-            width: 200px;
-            height: 550px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-
-        }
-        .lado2 {
-            display: flex;
-            border: solid 1px;
-            flex-direction: column;
-            width: 200px;
-            height: 800px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-
-        }
-
-        .gafa {
-            display: flex;
-            border: solid 1px;
-            flex-direction: column;
-            width: 10px;
-            height: 300px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-
-        }
-
-        .itm {
-            height: 90px;
-            width: 100px;
-            background-color: rgb(255, 255, 255);
-        }
-
-        .itm2 {
-            height: 100px;
-            width: 100px;
-            background-color: rgb(255, 255, 255);
-        }
-
-        #mochila {
-            border: solid 1px;
-            height: 350px;
-            width: 125px;
-            /*flex de moxhila*/
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        #id1{
-            border: solid 1px;
-            height: 15px;
-            width: 80px;
-            background-color: rgb(0, 0, 0);
-        }
-        #id2{
-            height: 15px;
-            width: 100px;
-            background-color: rgb(235, 148, 200);
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-        #idlado1{
-            height: 15px;
-            width: 35px;
-            background-color: rgb(0, 0, 0);
-        }
-        #id3{
-            height: 15px;
-            width: 125px;
-            background-color: rgb(235, 148, 200);
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-        #idlado2{
-            height: 15px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #id4{
-            height: 15px;
-            width: 125px;
-            background-color: rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-        #idlado3{
-            height: 15px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado4{
-            height: 15px;
-            width: 20px;
-            /*color oscuro*/
-            background-color: rgb(237, 105, 184);
-        }
-        #id5{
-            height: 15px;
-            width: 125px;
-            background-color: rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-        #idlado5{
-            height: 15px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado6{
-            height: 15px;
-            width: 40px;
-            background-color: rgb(237, 105, 184);
-        }
-        #id6{
-            height: 240px;
-            width: 125px;
-            background-color:rgb(237, 105, 184);
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-        #idlado7{
-            height: 240px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #id7{
-            height: 15px;
-            width: 125px;
-            background-color: rgb(237, 105, 184);
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-        #idlado8{
-            height: 15px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #id8{
-            height: 20px;
-            width: 105px;
-            background-color: rgb(0, 0, 0);
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-        }
-        #lado1 {
-            display: flex;
-            border: solid 1px;
-            flex-direction: column;
-            width: 220px;
-            height: 660px;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-        #l1{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(0, 0, 0);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado9{
-            height: 20px;
-            width: 60px;
-            background-color: rgb(255, 255, 255);
-        }
-        #l2{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado10{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(255, 255, 255);
-        }
-        #idlado11{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l3{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado12{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(255, 255, 255);
-        }
-        #idlado13{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l4{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado14{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(255, 255, 255);
-        }
-        #idlado15{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l5{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado16{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l6{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(0, 0, 0);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado17{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado18{
-            height: 20px;
-            width: 100px;
-            background-color: rgb(235, 148, 200);
-        }
-        #l7{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(167, 213, 225);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado19{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado20{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado21{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l8{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(167, 213, 225);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado22{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado23{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado24{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado25{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(115, 156, 166);
-        }
-        #l9{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(167, 213, 225);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado26{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado27{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado28{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado29{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(115, 156, 166);
-        }
-        #l10{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(167, 213, 225);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado30{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado31{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado32{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado33{
-            height: 20px;
-            width: 60px;
-            background-color: rgb(115, 156, 166);
-        }
-        #l11{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(115, 156, 166);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado34{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado35{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado36{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l12{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(115, 156, 166);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado37{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado38{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado39{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l13{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(115, 156, 166);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado40{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado41{
-            height: 20px;
-            width: 100px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado42{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l14{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(115, 156, 166);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado43{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado44{
-            height: 20px;
-            width: 120px;
-            background-color: rgb(235, 148, 200);
-        }
-        #idlado45{
-            height: 20px;
-            width: 80px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l15{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado46{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado47{
-            height: 20px;
-            width: 20px;
-            /*color oscuro*/
-            background-color: rgb(237, 105, 184);
-        }
-        #l16{
-            height: 40px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado48{
-            height: 40px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado49{
-            height: 40px;
-            width: 40px;
-            /*color oscuro*/
-            background-color: rgb(237, 105, 184);
-        }
-        #l17{
-            height: 40px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado50{
-            height: 40px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado51{
-            height: 40px;
-            width: 60px;
-            /*color oscuro*/
-            background-color: rgb(237, 105, 184);
-        }
-        #l18{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado52{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado53{
-            height: 20px;
-            width: 80px;
-            /*color oscuro*/
-            background-color: rgb(237, 105, 184);
-        }
-        #l19{
-            height: 20px;
-            width: 220px;
-            background-color:rgb(235, 148, 200);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado54{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado55{
-            height: 20px;
-            width: 150px;
-            /*color oscuro*/
-            background-color: rgb(237, 105, 184);
-        }
-        #l20{
-            height: 80px;
-            width: 220px;
-            background-color: rgb(237, 105, 184);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado56{
-            height: 80px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l21{
-            height: 20px;
-            width: 220px;
-            background-color: rgb(0, 0, 0);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado57{
-            height: 20px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado58{
-            height: 20px;
-            width: 140px;
-            background-color: rgb(237, 105, 184);
-        }
-        #l22{
-            height: 100px;
-            width: 220px;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado59{
-            height: 100px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado60{
-            height: 100px;
-            width: 140px;
-            background-color: rgb(237, 105, 184);
-        }
-        #idlado61{
-            height: 100px;
-            width: 20px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l23{
-            height: 20px;
-            width: 220px;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado62{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #idlado63{
-            height: 20px;
-            width: 100px;
-            background-color: rgb(237, 105, 184);
-        }
-        #idlado64{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(0, 0, 0);
-        }
-        #l24{
-            height: 20px;
-            width: 220px;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
-        #idlado65{
-            height: 20px;
-            width: 40px;
-            background-color: rgb(255, 255, 255);
-        }
-        #idlado66{
-            height: 20px;
-            width: 100px;
-            background-color: rgb(0, 0, 0);
-        }
-        
-
-
-
-    </style>
+    <link rel="stylesheet" href="among.css" />
 </head>
 
 <body>
@@ -698,7 +37,6 @@
                 </div>
                 <div id="id8"></div>
             </div>
-
         </div>
         <div id="lado1">
             <div id="l1">
@@ -808,17 +146,94 @@
                 <div id="idlado66"></div>
             </div>
         </div>
-        <div class="lado2">
-            <div class="c">1</div>
-            <div class="d">2</div>
-            <div class="e">3</div>
-
+        <div id="lado2">
+            <div id="l1d">
+                <div id="idlado67"></div>
+            </div>
+            <div id="l2d">
+                <div id="idlado68"></div>
+                <div id="idlado69"></div>
+            </div>
+            <div id="l3d">
+                <div id="idlado70"></div>
+                <div id="idlado71"></div>
+            </div>
+            <div id="l4d">
+                <div id="idlado72"></div>
+                <div id="idlado73"></div>
+            </div>
+            <div id="l5d">
+                <div id="idlado74"></div>
+                <div id="idlado75"></div>
+            </div>
+            <div id="l6d">
+            </div>
+            <div id="l7d">
+                <div id="idlado76"></div>
+                <div id="idlado77"></div>
+                <div id="idlado78"></div>
+            </div>
+            <div id="l8d">
+                <div id="idlado79"></div>
+            </div>
+            <div id="l9d">
+            </div>
+            <div id="l10d">
+            </div>
+            <div id="l11d">
+                <div id="idlado80"></div>
+            </div>
+            <div id="l12d">
+                <div id="idlado81"></div>
+            </div>
+            <div id="l13d">
+                <div id="idlado82"></div> 
+                <div id="c"></div> 
+            </div>
+            <div id="l14d">
+                <div id="idxd"></div>
+            </div>
+            <div id="l15d">
+                <div id="idlado83"></div>
+                <div id="d"></div>
+            </div>
+            <div id="l16d">
+                <div id="idlado84"></div>
+                <div id="e"></div>
+            </div>
+            <div id="l17d">
+                <div id="f"></div>
+            </div>
+            <div id="l18d">
+                <div id="idlado85"></div>
+                <div id="idlado86"></div>
+                <div id="g"></div>
+            </div>
+            <div id="l19d">
+                <div id="idlado87"></div>
+                <div id="h"></div>
+            </div>
+            <div id="l20d">
+                <div id="idlado88"></div>
+                <div id="idlado89"></div>
+            </div>
+            <div id="l21d">
+                <div id="idlado91"></div>
+                <div id="idlado92"></div>
+            </div>
+            <div id="l22d">
+                <div id="idlado93"></div>
+                <div id="idlado94"></div>
+                <div id="idlado95"></div>
+            </div>
+            <div id="l23d">
+                <div id="idlado96"></div>
+                <div id="idlado97"></div>
+            </div>
         </div>
-        <div class="gafa">
-            <div class="c">1</div>
-            <div class="d">2</div>
-            <div class="e">3</div>
-
+        <div id="gafa">
+            <div id="a"></div>
+            <div id="b"></div>
         </div>
     </div>
 </body>
