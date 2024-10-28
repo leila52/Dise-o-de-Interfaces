@@ -150,6 +150,11 @@ footer p{
     .card-info {
         font-size: 0.7rem; 
     }
+    article{
+        padding: 1rem;
+        background-color: #7bdbb7;
+        border: 1px solid #c23131;
+    }
     /*para hacer las cajas que haya dos columnas en cada fila*/
     section{
         background-color: #d0e9c6;
@@ -206,6 +211,11 @@ footer p{
 
     .card-info {
         font-size: 0.6rem; 
+    }
+    article{
+        padding: 1rem;
+        background-color: #c936b0;
+        border: 1px solid #c23131;
     }
     /*para hacer que las cajas esten en cada fila*/
     section{
