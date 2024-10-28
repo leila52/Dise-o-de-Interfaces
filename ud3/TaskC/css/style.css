@@ -136,7 +136,7 @@ footer p{
     }
 }
 
-@media only screen and (max-width:950px){
+@media only screen and (max-width:1050px){
     /*para hacer la letra mas pequeña*/
     body {
         font-size: 0.8rem;
