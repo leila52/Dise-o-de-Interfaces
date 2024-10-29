@@ -136,7 +136,7 @@ footer p{
     }
 }
 
-@media only screen and (max-width:950px){
+@media only screen and (max-width:1050px){
     /*para hacer la letra mas pequeña*/
     body {
         font-size: 0.8rem;
@@ -149,6 +149,11 @@ footer p{
 
     .card-info {
         font-size: 0.7rem; 
+    }
+    article{
+        padding: 1rem;
+        background-color: #7bdbb7;
+        border: 1px solid #c23131;
     }
     /*para hacer las cajas que haya dos columnas en cada fila*/
     section{
@@ -206,6 +211,11 @@ footer p{
 
     .card-info {
         font-size: 0.6rem; 
+    }
+    article{
+        padding: 1rem;
+        background-color: #c936b0;
+        border: 1px solid #c23131;
     }
     /*para hacer que las cajas esten en cada fila*/
     section{

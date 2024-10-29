@@ -2,16 +2,24 @@
 <html lang="en">
     <head>
         <style>
-            @media only screen and (max-width:600px){
-            body{
-                background-color: aqua;
+            *{
+                box-sizing: border-box;
             }
-        }
+            .col-3{width: 25%;}
+            .col-3{width: 75%;}
+            [class*="col-"]{
+                float:left;
+                padding: 15px;
+                border: solid 1px;
+            }
         </style>
     </head>
     <body>
-        <div class="layout">
-            <div id="c1">celda1</div>
+        <div class="row">
+            <div class="col-3">patatapatatapatatapatatapatatavpatatavvvpatatavpatatavpatatavvpatatapatatapatatavvvpatata</div>
+            <div class="col-9">patatapatatapatatapatatapatatavpatatavvvpatatavpatatavpatatavvpatatapatatapatatavvvpatata<</div>
         </div>
+        <div class="col-3"></div>
+        <div class="col-9"></div>
     </body>
 </html>
