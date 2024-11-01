@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 880px) {
+    
+    #contenedor {
+      display: grid;
+      grid-template-columns:50% 50%;
+      grid-template-rows: 25% 25% 25% 25% 25%;
+    }
+    h1 {
+      font-size: 4vw;
+    }
+    #idFoto1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      #idFoto2 {
+        grid-column: 2/3;
+        grid-row: 1 / 2;
+      }
+      #idFoto3 {
+        grid-column: 1 / 2;
+        grid-row: 2/ 3;
+      }
+      #idFoto4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      #idFoto5 {
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+      }
+      #idFoto6 {
+        grid-column: 7 / 13;
+        grid-row: 3 / 4;
+      }
+      #idFoto7 {
+        grid-column: 1 / 7;
+        grid-row: 4 / 5;
+      }
+      #idFoto8 {
+        grid-column: 7 / 13;
+        grid-row: 4 / 5;
+      }
+      #idFoto9 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 6;
+      }
+      #idFoto10 {
+        grid-column: 7 / 13;
+        grid-row: 5 / 6;
+      }
+      #contenedor > div {
+        height: 30vw;
+      }
+}

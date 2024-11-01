@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1500px) {
+    
+ section {
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  }
+  header {
+    background-color: rgb(215, 140, 182);
+    color: rgb(45, 108, 107);
+    position: sticky;
+    top: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-left: 2%;
+    font-size: 20px;
+  }
+  .banner-left {
+    grid-column: 1 / 2;
+    grid-row:  1 / 11;
+    background-color: rgb(105, 204, 206);
+  }
+  .banner-right {
+    grid-column: 3/4;
+    grid-row: 1 / 11;
+    background-color: rgb(105, 204, 206);
+  }
+  #contenedor {
+    background-color: rgb(205, 135, 191);
+    border: solid 1px;
+    grid-column: 2/3;
+    grid-row: 1 / 11;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  }
+
+  [id^="idFoto"] {
+    margin: 5%;
+    height: 50%;
+  }
+  
+  img {
+    height: 500px;
+    width: 500px;
+    max-width: 600px;
+  }
+
+  #idFoto1 {
+    background-image: url(../img/bob1.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto2 {
+    background-image: url(../img/bob2.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto3 {
+    background-image: url(../img/bob3.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto4 {
+    background-image: url(../img/bob4.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto5 {
+    background-image: url(../img/bob5.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto6 {
+    background-image: url(../img/bob6.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto7 {
+    background-image: url(../img/bob7.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto8 {
+    background-image: url(../img/bob8.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto9 {
+    background-image: url(../img/bob9.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  #idFoto10 {
+    background-image: url(../img/bob10.jpg);
+    background-attachment: local;
+    background-repeat: round;
+    background-size: cover;
+  }
+  
+}
