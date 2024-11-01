@@ -4,7 +4,7 @@
     #contenedor {
       display: grid;
       grid-template-columns:50% 50%;
-      grid-template-rows: 25% 25% 25% 25% 25%;
+      grid-template-rows: 20% 20% 20% 20% 20% ;
     }
     h1 {
       font-size: 4vw;
@@ -26,30 +26,30 @@
         grid-row: 2/3;
       }
       #idFoto5 {
-        grid-column: 1 / 7;
+        grid-column: 1 / 2;
         grid-row: 3 / 4;
       }
       #idFoto6 {
-        grid-column: 7 / 13;
+        grid-column: 2 / 3;
         grid-row: 3 / 4;
       }
       #idFoto7 {
-        grid-column: 1 / 7;
+        grid-column: 1/ 2;
         grid-row: 4 / 5;
       }
       #idFoto8 {
-        grid-column: 7 / 13;
+        grid-column: 2/ 3;
         grid-row: 4 / 5;
       }
       #idFoto9 {
-        grid-column: 1 / 7;
+        grid-column: 1 / 2;
         grid-row: 5 / 6;
       }
       #idFoto10 {
-        grid-column: 7 / 13;
+        grid-column: 2 / 3;
         grid-row: 5 / 6;
       }
       #contenedor > div {
-        height: 30vw;
+        height: 40vw;
       }
 }
