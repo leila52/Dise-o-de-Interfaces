@@ -1,0 +1,33 @@
+#Tarjeta{
+    width: 400px;
+    height: 250px;
+    background-image: url(bible.jpg);
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+img{
+    position: absolute;
+    width: 50px;
+    top:5px;
+    right: 5px;
+    z-index: 2;
+    
+}
+#nombre{
+    color: aliceblue;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    text-shadow: 2px 2px 2px rgb(221, 119, 235);
+    z-index: 2;
+}
+#titulo{
+    color: aliceblue;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    text-shadow: 2px 2px 2px aquamarine;
+    z-index: 2;
+}

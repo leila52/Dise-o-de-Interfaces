@@ -1,0 +1,35 @@
+#contenedor{
+    width: 950px;
+    height:600px;
+    position: relative;
+}
+#bible{
+    width: 450px;
+    height: 300px;
+    border: none;
+}
+
+#topizq{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#topde{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+#bottomizq{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    
+}
+#bottomde{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
