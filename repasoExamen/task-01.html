@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Examen</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="estilosejercicio.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <a id="Inicio"></a>
+
+    <div id="header">
+        <br><br><br>
+        <a href="#Inicio">
+            <div id="boton">Inicio</div>
+        </a>
+        <a href="#Tablas">
+            <div id="boton">Horario</div>
+        </a>
+        <a href="#Formularios">
+            <div id="boton">Formulario</div>
+        </a>
+    </div>
+
+    <div id="contenedor">
+        <div id="celda1">
+            <div id="celdaimagen1">
+                <div id="img1"></div>
+                <div id="img2"></div>
+            </div>
+            <div id="celdaimagen2">
+                <div id="img3"></div>
+                <div id="img4"></div>
+
+            </div>
+        </div>
+
+        <div id="celda2">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut faucibus dui. Duis condimentum feugiat lectus eget ullamcorper. Maecenas non elit ullamcorper, consequat eros in, tempor orci. Sed mollis quam tortor, ac dapibus urna aliquet eget. Cras rhoncus orci viverra dolor imperdiet pharetra. Sed hendrerit tempus est, id euismod ipsum venenatis at. Praesent maximus elementum risus varius gravida.
+            </p>
+            <p>Mauris at neque eget diam dignissim ultrices at eget nunc. Nulla facilisi. Aenean tempor eu arcu ac porttitor. Pellentesque ut lectus non est ornare sodales. Donec eget auctor libero. Vivamus elementum, enim sit amet faucibus fermentum, turpis justo maximus ipsum, quis semper dolor dui in lectus. Aliquam egestas convallis nisi, vel laoreet ipsum mollis lacinia. Curabitur elementum magna sit amet sagittis efficitur.
+            </p>
+            <p>Quisque suscipit commodo est nec ullamcorper. Nullam ipsum justo, convallis a felis quis, malesuada elementum dui. Fusce at justo tortor. Duis sit amet metus eget sapien fermentum commodo id at elit. Duis ut ligula eu tellus tristique elementum. Aliquam quis convallis nunc. Suspendisse quis condimentum nisl. Nullam euismod mi id lacus feugiat consequat. Phasellus orci ante, bibendum non orci sit amet, suscipit molestie diam. Morbi maximus faucibus rhoncus.
+            </p>
+
+        </div>
+        <div id="pokeball">
+            <h1>POKEBALL</h1>
+            <a id="Tablas"></a>
+        </div>
+        <div id="pokeballC">
+            <img id="poke" src="POKEBALL1.png">
+        </div>
+        <div id="formulario">
+            <h1>FORMULARIO</h1>
+            <a id="Formularios"></a>
+        </div>
+        <div id="formularioC">
+            <form>
+                <fieldset>
+                    <legend>Datos de Pago</legend>
+                    <p><span style="color: red;">*</span> Indica un campo Obligatorio</p>
+                    <span style="color: red;">*</span> Nombre del titular de la tarjeta:
+                    <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" required><br><br>
+
+                    <span style="color: red;">*</span> Número de la Tarjeta:
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta" required><br><br>
+
+                    <span style="color: red;">*</span> Fecha de vencimiento:
+                    <input type="month" id="fecha-vencimiento" name="fecha-vencimiento" required><br><br>
+
+                    <span style="color: red;">*</span> CCV:
+                    <input type="text" id="ccv" name="ccv" maxlength="4" required><br><br>
+                </fieldset>
+                <button type="submit" value="Enviar">Enviar</button>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
