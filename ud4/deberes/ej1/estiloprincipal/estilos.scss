@@ -1,0 +1,42 @@
+$tamaño:400px;
+$altura:250px;
+$radio:10px;
+$colores: red, rgb(255, 255, 255), blue, rgb(32, 235, 235);
+$primer_color:nth($colores,1);
+$segundo_color:nth($colores,2);
+$tercer_color:nth($colores,3);
+$cuarto_color:nth($colores,4);
+
+#Tarjeta{
+    width: $tamaño;
+    height: $altura;
+    background-image: url(descarga.jpeg);
+    background-size: cover;
+    position: relative;
+    border-radius: $radio;
+}
+
+img{
+    position: absolute;
+    width: 50px;
+    top:5px;
+    right: 5px;
+    z-index: 2;
+    
+}
+#nombre{
+    color: $segundo_color;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    text-shadow: $tercer_color;
+    z-index: 2;
+}
+#titulo{
+    color: $segundo_color;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    text-shadow: $cuarto_color;
+    z-index: 2;
+}

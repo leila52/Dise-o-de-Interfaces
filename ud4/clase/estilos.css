@@ -1,0 +1,19 @@
+.encabezado {
+  background-color: #1ec2d8;
+  color: yellow;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.contenedor {
+  background-color: #dabc11;
+  padding: 20px;
+}
+.contenedor h1 {
+  font-size: 24px;
+  color: #c72ec7;
+}
+.contenedor p {
+  font-size: 16px;
+  color: #291ec5;
+}/*# sourceMappingURL=estilos.css.map */

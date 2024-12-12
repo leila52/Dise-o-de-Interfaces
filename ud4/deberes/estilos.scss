@@ -1,0 +1,70 @@
+$color_predeterminado: #000000;
+$color_secundario: #ffffff;
+$tamaño_fuenteT:24px;
+$tamaño_fuente:16px;
+$espacio:20px;
+$radio:20px;
+
+//listtas
+// Valores separados con comas
+$colores: red, green, blue, yellow;
+
+// Valores separados sin comas
+$colores2: red green blue yellow; 
+
+//Valores con comillas
+$colores3: 'red' 'green' 'blue' 'yellow'; 
+$segundo_color:nth($colores,1);
+body{
+    width: 50%;
+    margin: auto;
+    background-color: $color_predeterminado;
+}
+//usar variables
+.encabezado{
+    $header_wodth:150px;
+    $primer_color:nth($colores,3);
+    background-color:  $color_secundario;
+    border-radius: $radio;
+    align-content: center;
+    padding: $espacio;
+    width: $header_wodth;
+    h1 {
+    font-size: $tamaño_fuenteT;
+    text-align: center;
+    color:$primer_color;
+    }
+    p {
+    font-size: $tamaño_fuente;
+    text-align: center;
+    color: $color_predeterminado;
+    }
+
+}
+.contenido {
+    $header_wodth:20px;
+    $cabecera:150px;
+    $fuente:15px;
+    text-align: center;
+    
+    margin-top: $header_wodth;
+    background-color:  $color_secundario;
+    align-content: center;
+    border-radius: $radio;
+    width: $cabecera;
+    padding: $espacio;
+    h2 {
+        font-size: $fuente;
+        color: $color_predeterminado;
+    }
+    .boton {
+        background-color: $color_predeterminado;
+        &:hover {
+        background-color: $segundo_color;
+        }
+        }
+   
+    }
+   
+
+

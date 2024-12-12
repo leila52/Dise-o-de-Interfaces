@@ -1,0 +1,40 @@
+//defines variables globales
+$color_predeterminado: #1ec2d8;
+$color_secundario: #9834db;
+$tamaño_fuente:16px;
+$espacio:20px;
+
+//listtas
+// Valores separados con comas
+$colores: red, green, blue, yellow;
+
+// Valores separados sin comas
+$colores2: red green blue yellow; 
+
+//Valores con comillas
+$colores3: 'red' 'green' 'blue' 'yellow'; 
+
+
+//usar variables
+.encabezado{
+    //variables locales
+    $header_wodth:50%;
+    $primer_color:nth($colores,4);
+    background-color: $color_predeterminado;
+    color: $primer_color ;
+    font-size: $tamaño_fuente;
+    padding: $espacio;
+}
+//padre contenedor y los hijos seria h1 y p
+.contenedor {
+    background-color: #dabc11;
+    padding: 20px;
+    h1 {
+    font-size: 24px;
+    color: #c72ec7;
+    }
+    p {
+    font-size: 16px;
+    color: #291ec5;
+    }
+    }

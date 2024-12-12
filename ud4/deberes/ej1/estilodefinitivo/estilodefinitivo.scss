@@ -1,0 +1,39 @@
+$tamano:950px;
+$altura:600px;
+$variablenula:0px;
+
+#contenedor{
+    width: $tamano;
+    height:$altura;
+    position: relative;
+}
+#bible{
+    width: $tamano/2;
+    height: $altura/2;
+    border: none;
+}
+
+#topizq{
+    position: absolute;
+    top: $variablenula;
+    left: $variablenula;
+}
+
+#topde{
+    position: absolute;
+    top: $variablenula;
+    right: $variablenula;
+    
+}
+#bottomizq{
+    position: absolute;
+    bottom: $variablenula;
+    left: $variablenula;
+    
+}
+#bottomde{
+    position: absolute;
+    bottom: $variablenula;
+    right: $variablenula;
+    
+}
