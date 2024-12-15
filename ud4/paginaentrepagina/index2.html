@@ -17,20 +17,39 @@
         <a href="#">Contacto</a>
     </nav>
     <div class="contenedor2">
-        <div class="slider-container">  
-            <img
-              class="slider-item"
-              src="https://images.unsplash.com/photo-1580501170961-bb0dbf63a6df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80"
-            />
-            <img
-              class="slider-item"
-              src="https://images.unsplash.com/photo-1580501170888-80668882ca0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            />
-            <img
-              class="slider-item"
-              src="https://images.unsplash.com/photo-1572508589584-94d778209dd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            />
-          </div>  
+      <div class="carousel-container" id="carrusel">
+        <!-- Radio buttons -->
+        <input type="radio" name="carousel" id="slide1" checked>
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+
+        <!-- Slides -->
+        <div class="carousel">
+            <div class="carousel-item" id="item1">
+                <img src="https://i.pinimg.com/236x/4a/56/70/4a567007573070370111122b374d4b6d.jpg">
+            </div>
+            <div class="carousel-item" id="item2">
+                <img src="https://i.pinimg.com/236x/cf/72/bc/cf72bc08d31b29fc4052e1863be87b4f.jpg">
+            </div>
+            <div class="carousel-item" id="item3">
+                <img src="https://i.pinimg.com/236x/4a/56/70/4a567007573070370111122b374d4b6d.jpg">
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="carousel-nav">
+            <label for="slide1" class="nav-button"></label>
+            <label for="slide2" class="nav-button"></label>
+            <label for="slide3" class="nav-button"></label>
+        </div>
+          </div> 
     </div>
+    <footer>
+      <div class="footer-container">
+          
+          <div class="footer-bottom">
+              <p>&copy; todos los monos se aman y se respetan y cuidan.</p>
+            </div>
+  </footer>
 </body>
 </html>
