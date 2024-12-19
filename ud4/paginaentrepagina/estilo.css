@@ -132,7 +132,7 @@ footer {
 }
 
 .carousel-item img {
-  width: 40%;
+  width: 20%;
   max-height: 500px;
   display: block;
   -o-object-fit: cover;

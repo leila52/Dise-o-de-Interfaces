@@ -7,7 +7,7 @@ $color_caja:nth($colores,2);
 $caja_letra:nth($colores,4);
 $caja_letra2:nth($colores,6);
 $valor_cien:100px;
-
+ 
 body {
     background-color: $color;
     font-family: Arial, sans-serif;
@@ -148,7 +148,7 @@ body {
   }
   
   .carousel-item img {
-    width: 40%;
+    width: 20%;
     max-height: 500px;
     display: block;
     object-fit: cover;
