@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 119, 19);
+}
+header img {
+  width: 100px;
+  height: auto;
+  margin-left: 100px;
+}
+header h1 {
+  margin-left: 10px;
+  color: white;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: rgb(218, 94, 94);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+a {
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cabecera img {
+  width: 500px;
+  height: 400px;
+}/*# sourceMappingURL=estilos.css.map */

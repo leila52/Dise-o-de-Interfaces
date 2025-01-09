@@ -1,0 +1,51 @@
+$valornulo:0px;
+$colores: rgb(218, 94, 94), aquamarine, rgb(14, 119, 19), rgb(0, 24, 243),white,red;
+$ultimo_color:nth($colores,5);
+$fondo_color:nth($colores,3);
+$color:nth($colores,1);
+$valor_cien:100px;
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: $valornulo;
+    padding: $valornulo;
+  }
+  
+  header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: $fondo_color;
+    img {
+        width: $valor_cien;
+        height: auto;
+        margin-left:100px;
+      }
+    h1{
+        margin-left: 10px;
+        color: $ultimo_color;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+      }
+   
+  }
+  
+  nav{
+    $valordemargin:100%;
+    background-color: $color;
+    display: flex;
+    width: $valordemargin;
+    justify-content: center;
+    align-items: center;
+    margin: $valornulo auto;
+  }
+  a{
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px; 
+    text-decoration: none;
+    color: $ultimo_color;
+    display: flex;
+  }
