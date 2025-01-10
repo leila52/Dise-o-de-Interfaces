@@ -1,13 +1,40 @@
-.cabecera {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    
-    img {
-      width: 500px;
-      height: 400px;
-    }
+//bucle para dar ancho entre el menu lateral y el contenido
+@for $i from 1 through 3{
+  #elemento-#{$i}{
+    width: ($i * 25%);
   }
+}
+
+.cabecera {
+  margin-top: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  
+  img {
+    width: 40%;
+    height: 50%;
+  }
+}
+
+//para el menu laterar y el contenido
+.contenido{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  gap: 15px;
+  #elemento-1{
+    min-width: 200px;
+  }
+  #elemento-2{
+    margin-left: 10px;
+    width: 100%;
+    min-width: 200px;
+  }
+
+
+}
+
   
   .contenedor {
     display: grid;
@@ -18,7 +45,7 @@
     
     div {
         width: 50%;
-        height: 250px;
+        height: 90%;
       text-align: center;
       //background-color: map-get($theme, secondary); 
       background-color:rgb(220, 103, 134);
