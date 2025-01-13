@@ -51,18 +51,29 @@ body:has(#theme-switch:checked) header {
 }
 
 .theme-toggle label {
-  padding: 10px 20px;
-  border: none;
-  background-color: #207b74;
-  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
-body:has(#theme-switch:checked) .theme-toggle label {
-  background-color: #555;
-  color: #ddd;
+.theme-toggle img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s ease;
+}
+
+/* Oculta el icono de la luna por defecto */
+#moon-icon {
+  opacity: 0;
+}
+
+#theme-switch:checked ~ label #sun-icon {
+  opacity: 0;
+}
+
+#theme-switch:checked ~ label #moon-icon {
+  opacity: 1;
 }
 
 /* Otros estilos */
