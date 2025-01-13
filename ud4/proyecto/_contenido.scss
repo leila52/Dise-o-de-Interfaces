@@ -1,7 +1,7 @@
 //bucle para dar ancho entre el menu lateral y el contenido
 @for $i from 1 through 3{
   #elemento-#{$i}{
-    width: ($i * 25%);
+    width: ($i * 30%);
   }
 }
 
@@ -10,8 +10,12 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  background-color: bisque;
   
   img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
     width: 40%;
     height: 50%;
   }
@@ -25,6 +29,8 @@
   gap: 15px;
   #elemento-1{
     min-width: 200px;
+    background-color: rgb(236, 221, 221);
+    margin-left: 10px;
   }
   #elemento-2{
     margin-left: 10px;
@@ -45,7 +51,7 @@
     
     div {
         width: 50%;
-        height: 90%;
+        height: 70%;
       text-align: center;
       //background-color: map-get($theme, secondary); 
       background-color:rgb(220, 103, 134);
@@ -63,8 +69,32 @@
   
       p {
         font-size: 16px;
-        margin-top: 10px;
+        margin-top: 5px;
         //color: map-get($theme, text); 
+      }
+      &:hover {
+        width: 60%; 
+        height: 80%; 
+      }
+  
+      // Configuración para mostrar y ocultar texto
+      p:first-of-type {
+        display: block;
+      }
+  
+      p:last-of-type {
+        display: none;
+      }
+  
+      &:hover {
+        p:first-of-type {
+          display: none;
+        }
+  
+        p:last-of-type {
+          display: block;
+        }
       }
     }
   }
+  
