@@ -10,8 +10,35 @@ body {
 
 /* Modo Noche */
 body:has(#theme-switch:checked) {
-  background-color: #544b4b;
-  color: #e2c1c1;
+  background-color: #555;
+  color: #ffffff;
+}
+body:has(#theme-switch:checked) .contenido {
+  background-color: #555;
+}
+body:has(#theme-switch:checked) .contenido #elemento-1 {
+  background-color: #c75252;
+}
+body:has(#theme-switch:checked) .contenido #elemento-1 .titulo {
+  color: #ffffff;
+}
+body:has(#theme-switch:checked) .contenido #elemento-1 .menu_lateral {
+  background-color: #c75252;
+}
+body:has(#theme-switch:checked) .contenido #elemento-1 .menu_lateral div {
+  background-color: #6b018b;
+}
+body:has(#theme-switch:checked) .contenido #elemento-1 .menu_lateral div img {
+  background-color: #6b018b;
+}
+body:has(#theme-switch:checked) .contenido #elemento-1 .menu_lateral div p {
+  color: #ffffff;
+}
+body:has(#theme-switch:checked) .contenido #elemento-2 {
+  background-color: #555;
+}
+body:has(#theme-switch:checked) .contenido #elemento-2 .cabecera {
+  background-color: #b3b454;
 }
 
 header {
@@ -35,7 +62,7 @@ header .logo {
 }
 
 body:has(#theme-switch:checked) header {
-  background-color: #333;
+  background-color: #000000;
 }
 
 .theme-toggle {
@@ -43,7 +70,7 @@ body:has(#theme-switch:checked) header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .theme-toggle input[type=checkbox] {
@@ -51,6 +78,7 @@ body:has(#theme-switch:checked) header {
 }
 
 .theme-toggle label {
+  margin-left: 20px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -115,6 +143,11 @@ a {
   display: flex;
 }
 
+body:has(#theme-switch:checked) a {
+  background-color: rgb(88, 6, 6);
+  color: #ffffff;
+}
+
 .titulo {
   text-align: center;
 }
@@ -130,9 +163,10 @@ a {
   margin-right: 10px;
 }
 .menu_lateral div {
+  display: grid;
   width: 90%;
   height: 250px;
-  text-align: center;
+  text-align: 250px;
   background-color: rgb(185, 159, 166);
   border-radius: 10px;
   display: grid;
@@ -149,6 +183,7 @@ a {
   font-size: 15px;
   margin-top: 10px;
   text-align: center;
+  margin: auto;
 }
 
 #elemento-1 {
