@@ -1,7 +1,3 @@
-/*@import "_menu_superior.scss";
-@import "_menu_lateral.scss";
-@import "_contenido.scss";
-@import "_footer.scss";*/
 body {
   font-family: Arial, sans-serif;
   margin: 0px;
@@ -45,6 +41,15 @@ body:has(#theme-switch:checked) .contenido #elemento-2 .contenedor {
 }
 body:has(#theme-switch:checked) .contenido #elemento-2 .contenedor div {
   background-color: #6b018b;
+  color: #ddd;
+}
+body:has(#theme-switch:checked) .contenido #elemento-2 .inedito {
+  background-color: #555;
+  color: #ffffff;
+}
+body:has(#theme-switch:checked) .footer {
+  background-color: #401b4b;
+  color: #ffffff;
 }
 
 header {
@@ -71,7 +76,7 @@ body:has(#theme-switch:checked) header {
   background-color: #000000;
 }
 
-.theme-toggle {
+.noche {
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -79,25 +84,24 @@ body:has(#theme-switch:checked) header {
   gap: 5px;
 }
 
-.theme-toggle input[type=checkbox] {
+.noche input[type=checkbox] {
   display: none;
 }
 
-.theme-toggle label {
-  margin-left: 20px;
+.noche label {
+  margin-left: 10px;
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
 }
 
-.theme-toggle img {
+.noche img {
   width: 30px;
   height: 30px;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s;
 }
 
-/* Oculta el icono de la luna por defecto */
 #moon-icon {
   opacity: 0;
 }
@@ -110,13 +114,12 @@ body:has(#theme-switch:checked) header {
   opacity: 1;
 }
 
-/* Otros estilos */
 button {
   margin: 10px;
   padding: 10px 20px;
   border: none;
   background-color: #67aee8;
-  color: white;
+  color: black;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -143,7 +146,7 @@ a {
   justify-content: center;
   background-color: rgb(236, 6, 6);
   align-items: center;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   color: white;
   display: flex;
@@ -154,28 +157,34 @@ body:has(#theme-switch:checked) a {
   color: #ffffff;
 }
 
+@media (max-width: 800px) {
+  header img {
+    margin-left: 0;
+    width: 10%;
+  }
+  header h1 {
+    margin-left: 10px;
+  }
+}
 .titulo {
   text-align: center;
 }
 
 .menu_lateral {
   background-color: rgb(236, 221, 221);
+  margin: 15px 10px;
+  padding: 10px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  margin-top: 15px;
-  margin-bottom: 10px;
   gap: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .menu_lateral div {
   display: grid;
   width: 90%;
   height: 250px;
-  text-align: 250px;
+  text-align: center;
   background-color: rgb(185, 159, 166);
   border-radius: 10px;
-  display: grid;
   grid-template-rows: repeat(2, 2fr);
   margin-left: 15px;
 }
@@ -192,6 +201,17 @@ body:has(#theme-switch:checked) a {
   margin: auto;
 }
 
+@media (max-width: 800px) {
+  .menu_lateral {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
+  .cabecera {
+    width: 100%;
+  }
+}
 #elemento-1 {
   width: 30%;
 }
@@ -205,7 +225,8 @@ body:has(#theme-switch:checked) a {
 }
 
 .cabecera {
-  margin-top: 10px;
+  margin: 10px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,8 +260,8 @@ body:has(#theme-switch:checked) a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 15px;
 }
 .contenedor div {
   width: 50%;
@@ -248,7 +269,7 @@ body:has(#theme-switch:checked) a {
   text-align: center;
   background-color: rgb(220, 103, 134);
   border-radius: 10px;
-  margin-left: 100px;
+  margin-left: 50px;
   display: grid;
   grid-template-rows: repeat(2, 2fr);
 }
@@ -264,7 +285,7 @@ body:has(#theme-switch:checked) a {
 }
 .contenedor div:hover {
   width: 60%;
-  height: 80%;
+  height: 90%;
 }
 .contenedor div p:first-of-type {
   display: block;
@@ -279,6 +300,39 @@ body:has(#theme-switch:checked) a {
   display: block;
 }
 
+@media (max-width: 800px) {
+  .contenido {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contenido #elemento-1, .contenido #elemento-2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .cabecera {
+    flex-direction: column;
+  }
+  .cabecera img {
+    width: 80%;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+  .contenedor div {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(220, 103, 134);
+    border-radius: 10px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 2fr);
+  }
+}
 footer {
   text-align: center;
   padding: 10px 0;
@@ -288,10 +342,8 @@ footer p {
   margin: 0;
 }
 
-body {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@media (max-width: 800px) {
+  footer {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

@@ -6,3 +6,8 @@ footer {
       margin: 0;
     }
   }
+  @media (max-width:800px) {
+    footer {
+      padding: 10px; // Reducir el espacio de los márgenes
+    }
+  }

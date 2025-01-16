@@ -1,100 +1,147 @@
+//variables
+$ancho-inicial: 30%;
+$margen-superior: 10px;
+$margen-izquierdo: 10px;
+$color-fondo-cabecera: bisque;
+$color-fondo-lateral: rgb(236, 221, 221);
+$color-fondo-tarjeta: rgb(220, 103, 134);
+$ancho-imagen: 40%;
+$alto-imagen: 50%;
+$gap-general: 15px;
+$radio-borde: 10px;
+$fuente-tamano: 16px;
+
 //bucle para dar ancho entre el menu lateral y el contenido
-@for $i from 1 through 3{
-  #elemento-#{$i}{
-    width: ($i * 30%);
+@for $i from 1 through 3 {
+  #elemento-#{$i} {
+    width: ($i * $ancho-inicial);
   }
 }
-
+//para la imagen
 .cabecera {
-  margin-top: 10px;
+  //para el minx de los espacios
+  @include espacio($margen-superior, 0);
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  background-color: bisque;
+  background-color: $color-fondo-cabecera;
   
   img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-    width: 40%;
-    height: 50%;
+    margin-top: $margen-superior;
+    margin-bottom: $margen-superior;
+    width: $ancho-imagen;
+    height: $alto-imagen;
   }
 }
 
-//para el menu laterar y el contenido
-.contenido{
+// para el menú lateral y el contenido
+.contenido {
   display: flex;
   width: 100%;
-  margin-top: 10px;
-  gap: 15px;
-  #elemento-1{
+  margin-top: $margen-superior;
+  gap: $gap-general;
+  //lateral
+  #elemento-1 {
     min-width: 200px;
-    background-color: rgb(236, 221, 221);
-    margin-left: 10px;
+    background-color: $color-fondo-lateral;
+    margin-left: $margen-izquierdo;
   }
-  #elemento-2{
-    margin-left: 10px;
+  //contenido centrado
+  #elemento-2 {
+    margin-left: $margen-izquierdo;
     width: 100%;
     min-width: 200px;
   }
-
-
 }
-
+//las cajas de cada pareja
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: $gap-general;
+  padding: $gap-general;
   
-  .contenedor {
+  div {
+    width: 50%;
+    height: 70%;
+    text-align: center;
+    background-color: $color-fondo-tarjeta;
+    border-radius: $radio-borde;
+    margin-left: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
-    
-    div {
-        width: 50%;
-        height: 70%;
-      text-align: center;
-      //background-color: map-get($theme, secondary); 
-      background-color:rgb(220, 103, 134);
-      border-radius: 10px;
-      margin-left: 100px;
-      display: grid;
-      grid-template-rows: repeat(2, 2fr);
-  
-      img {
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 90%;
-        border-radius: 10px;
-      }
-  
-      p {
-        font-size: 16px;
-        margin-top: 5px;
-        //color: map-get($theme, text); 
-      }
-      &:hover {
-        width: 60%; 
-        height: 80%; 
-      }
-  
-      // Configuración para mostrar y ocultar texto
+    grid-template-rows: repeat(2, 2fr);
+
+    img {
+      margin-top: $margen-superior;
+      margin-left: $margen-superior;
+      width: 90%;
+      border-radius: $radio-borde;
+    }
+
+    p {
+      font-size: $fuente-tamano;
+      margin-top: 5px;
+    }
+
+    &:hover {
+      width: 60%; 
+      height: 90%; 
+    }
+
+    // configuración para mostrar y ocultar texto
+    p:first-of-type {
+      display: block;
+    }
+
+    p:last-of-type {
+      display: none;
+    }
+
+    &:hover {
       p:first-of-type {
-        display: block;
-      }
-  
-      p:last-of-type {
         display: none;
       }
-  
-      &:hover {
-        p:first-of-type {
-          display: none;
-        }
-  
-        p:last-of-type {
-          display: block;
-        }
+
+      p:last-of-type {
+        display: block;
       }
     }
   }
+}
+@media (max-width:800px) {
+  .contenido {
+    flex-direction: column; 
+    gap: 10px;  
+
+    #elemento-1, #elemento-2 {
+      //para que ocupe todo lo ancho
+      width: 100%;  
+      margin-left: 0; 
+    }
+  }
+  .cabecera {
+    flex-direction: column;
+    img {
+      width: 80%;  
+    }
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: $gap-general;
+    padding: $gap-general;
   
+  div {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: $color-fondo-tarjeta;
+    border-radius: $radio-borde;
+    margin-left: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 2fr);
+  }
+}
+}
