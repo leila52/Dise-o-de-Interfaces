@@ -40,6 +40,12 @@ body:has(#theme-switch:checked) .contenido #elemento-2 {
 body:has(#theme-switch:checked) .contenido #elemento-2 .cabecera {
   background-color: #b3b454;
 }
+body:has(#theme-switch:checked) .contenido #elemento-2 .contenedor {
+  background-color: #555;
+}
+body:has(#theme-switch:checked) .contenido #elemento-2 .contenedor div {
+  background-color: #6b018b;
+}
 
 header {
   display: flex;
