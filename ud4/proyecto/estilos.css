@@ -323,7 +323,7 @@ body:has(#theme-switch:checked) a {
     padding: 15px;
   }
   .contenedor div {
-    width: 50%;
+    width: 45%;
     height: auto;
     text-align: center;
     background-color: rgb(220, 103, 134);
