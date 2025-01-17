@@ -63,7 +63,7 @@ $fuente-tamano: 16px;
   grid-template-rows: repeat(2, 1fr);
   gap: $gap-general;
   padding: $gap-general;
-  //cada caja
+  //cada caja tiene un tamaño que va cambiando segun el tamaño de la pantalla
   div {
     width: 50%;
     height: 85%;
@@ -73,7 +73,7 @@ $fuente-tamano: 16px;
     margin-left: 50px;
     display: grid;
     grid-template-rows: repeat(2, 2fr);
-
+    //la imagen esta centrada y con cierto tamaño de la mitad del div
     img {
       margin-top: $margen-superior;
       margin-left: auto;
@@ -83,7 +83,7 @@ $fuente-tamano: 16px;
       width: 90%;
       border-radius: $radio-borde;
     }
-
+    //con otra tipografía y centrado
     p {
       font-size: $fuente-tamano;
       margin-top: 5px;

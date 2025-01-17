@@ -64,7 +64,7 @@ body:has(#theme-switch:checked) {
 
   }
 
-
+//el header tiene un fondo diferente
 header {
   display: flex;
   justify-content: center;
@@ -81,17 +81,19 @@ header {
     margin-left: 10px;
     color: $ultimo_color;
   }
-
+  //para poner correctamente el logo
   .logo {
     display: flex;
     align-items: center;
   }
 }
 
+//si pulsa el modo noche el fondo cambia de color
 body:has(#theme-switch:checked) header {
   background-color: #000000;
 }
 
+//los estilos del boton del cheked
 .noche{
   margin: 10px;
   display: flex;
@@ -123,31 +125,16 @@ body:has(#theme-switch:checked) header {
   opacity: 0;
 }
 
+//si cambia sol
 #theme-switch:checked ~ label #sun-icon {
   opacity: 0;
 }
-
+//si cambia a luna
 #theme-switch:checked ~ label #moon-icon {
   opacity: 1;
 }
 
-/* Otros estilos */
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #67aee8;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-body:has(#theme-switch:checked) button {
-  background-color: #555;
-  color: #ddd;
-}
-
+//estilos del menu que es el indicice de inicio,parejas e inedito
 nav {
   $valordemargin: 100%;
   width: 50%;
@@ -157,7 +144,7 @@ nav {
   align-items: center;
   margin: $valornulo auto;
 }
-
+//cada uno tiene un fondo
 a {
   width: 50%;
   height: 35px;
@@ -170,6 +157,7 @@ a {
   color: $ultimo_color;
   display: flex;
 }
+//si se cambia a modo noche se le cambia el fondo a un color más oscuro
 body:has(#theme-switch:checked) a {
   background-color: rgb(88, 6, 6); 
   color: $color_texto_noche;
