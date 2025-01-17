@@ -34,7 +34,9 @@ $fuente-tamano: 16px;
   }
 }
 
-// para el menú lateral y el contenido
+// para el menú lateral y el contenido 
+//elemento1 es el menu lateral y l.uego el contenido central es el elemento 2 
+//elemento uno se le da el tamaño con el bucle for al igual el elemento2
 .contenido {
   display: flex;
   width: 100%;
@@ -53,6 +55,7 @@ $fuente-tamano: 16px;
     min-width: 200px;
   }
 }
+
 //las cajas de cada pareja
 .contenedor {
   display: grid;
@@ -60,10 +63,10 @@ $fuente-tamano: 16px;
   grid-template-rows: repeat(2, 1fr);
   gap: $gap-general;
   padding: $gap-general;
-  
+  //cada caja
   div {
     width: 50%;
-    height: 70%;
+    height: 85%;
     text-align: center;
     background-color: $color-fondo-tarjeta;
     border-radius: $radio-borde;
@@ -73,7 +76,10 @@ $fuente-tamano: 16px;
 
     img {
       margin-top: $margen-superior;
-      margin-left: $margen-superior;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
       width: 90%;
       border-radius: $radio-borde;
     }
@@ -82,10 +88,11 @@ $fuente-tamano: 16px;
       font-size: $fuente-tamano;
       margin-top: 5px;
     }
-
+    //para q cuandoi el usuario pase por encima cambie o oscurezca cierta parte el color
     &:hover {
       width: 60%; 
       height: 90%; 
+      background-color: darken($color-fondo-tarjeta, 15%);
     }
 
     // configuración para mostrar y ocultar texto
@@ -108,6 +115,7 @@ $fuente-tamano: 16px;
     }
   }
 }
+//el media ara el movil
 @media (max-width:800px) {
   .contenido {
     flex-direction: column; 
@@ -132,7 +140,7 @@ $fuente-tamano: 16px;
     grid-template-rows: repeat(2, 1fr);
     gap: $gap-general;
     padding: $gap-general;
-  
+  //para cambiar que sean de dos en dos en vez de 3
   div {
     width: 45%;
     height: auto;
