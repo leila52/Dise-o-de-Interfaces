@@ -92,19 +92,18 @@ body:has(#theme-switch:checked) header {
   background-color: #000000;
 }
 
-.theme-toggle {
+.noche{
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-
-.theme-toggle input[type="checkbox"] {
+.noche input[type="checkbox"]{
   display: none;
 }
 
-.theme-toggle label {
+.noche label{
   margin-left: 20px;
   display: flex;
   align-items: center;
@@ -112,11 +111,12 @@ body:has(#theme-switch:checked) header {
   cursor: pointer;
 }
 
-.theme-toggle img {
+.noche img{
   width: 30px;
   height: 30px;
   transition: opacity 0.3s ease;
 }
+
 
 /* Oculta el icono de la luna por defecto */
 #moon-icon {
@@ -174,3 +174,4 @@ body:has(#theme-switch:checked) a {
   background-color: rgb(88, 6, 6); 
   color: $color_texto_noche;
 }
+
