@@ -1,15 +1,16 @@
 
-// 2. Mixins
+//mixins dar propiedad a un elemento
 @mixin center-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+//mixins para los espacios 
 @mixin espacio($margen, $padding) {
   margin: $margen;
   padding: $padding;
 }
-// 3. Importar Parciales
+// importar Parciales
 @import "menu_superior.scss";
 @import "menu_lateral.scss";
 @import "contenido.scss";

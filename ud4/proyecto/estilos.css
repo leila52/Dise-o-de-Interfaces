@@ -4,7 +4,6 @@ body {
   padding: 0px;
 }
 
-/* Modo Noche */
 body:has(#theme-switch:checked) {
   background-color: #555;
   color: #ffffff;
@@ -41,15 +40,6 @@ body:has(#theme-switch:checked) .contenido #elemento-2 .contenedor {
 }
 body:has(#theme-switch:checked) .contenido #elemento-2 .contenedor div {
   background-color: #6b018b;
-  color: #ddd;
-}
-body:has(#theme-switch:checked) .contenido #elemento-2 .inedito {
-  background-color: #555;
-  color: #ffffff;
-}
-body:has(#theme-switch:checked) .footer {
-  background-color: #401b4b;
-  color: #ffffff;
 }
 
 header {
@@ -89,7 +79,7 @@ body:has(#theme-switch:checked) header {
 }
 
 .noche label {
-  margin-left: 10px;
+  margin-left: 20px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -99,9 +89,10 @@ body:has(#theme-switch:checked) header {
 .noche img {
   width: 30px;
   height: 30px;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
+/* Oculta el icono de la luna por defecto */
 #moon-icon {
   opacity: 0;
 }
@@ -112,22 +103,6 @@ body:has(#theme-switch:checked) header {
 
 #theme-switch:checked ~ label #moon-icon {
   opacity: 1;
-}
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #67aee8;
-  color: black;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-body:has(#theme-switch:checked) button {
-  background-color: #555;
-  color: #ddd;
 }
 
 nav {
@@ -146,7 +121,7 @@ a {
   justify-content: center;
   background-color: rgb(236, 6, 6);
   align-items: center;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
   color: white;
   display: flex;
@@ -157,21 +132,16 @@ body:has(#theme-switch:checked) a {
   color: #ffffff;
 }
 
-@media (max-width: 800px) {
-  header img {
-    margin-left: 0;
-    width: 10%;
-  }
-  header h1 {
-    margin-left: 10px;
-  }
-}
 .titulo {
   text-align: center;
 }
 
 .menu_lateral {
   background-color: rgb(236, 221, 221);
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin: 15px 10px;
   padding: 10px;
   display: grid;
@@ -181,22 +151,27 @@ body:has(#theme-switch:checked) a {
 .menu_lateral div {
   display: grid;
   width: 90%;
-  height: 250px;
+  height: 80%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgb(185, 159, 166);
   border-radius: 10px;
   grid-template-rows: repeat(2, 2fr);
-  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
 }
 .menu_lateral div img {
   margin-top: 10px;
-  margin-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   width: 90%;
   border-radius: 10px;
 }
 .menu_lateral div p {
   font-size: 15px;
-  margin-top: 10px;
+  justify-content: center;
   text-align: center;
   margin: auto;
 }
@@ -265,7 +240,7 @@ body:has(#theme-switch:checked) a {
 }
 .contenedor div {
   width: 50%;
-  height: 70%;
+  height: 85%;
   text-align: center;
   background-color: rgb(220, 103, 134);
   border-radius: 10px;
@@ -275,7 +250,10 @@ body:has(#theme-switch:checked) a {
 }
 .contenedor div img {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   border-radius: 10px;
 }
@@ -286,6 +264,7 @@ body:has(#theme-switch:checked) a {
 .contenedor div:hover {
   width: 60%;
   height: 90%;
+  background-color: #c82e57;
 }
 .contenedor div p:first-of-type {
   display: block;

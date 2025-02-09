@@ -2,7 +2,7 @@
 $color-fondo-menu: rgb(236, 221, 221);
 $color-fondo-div: rgb(185, 159, 166);
 $ancho-div: 90%;
-$alto-div: 250px;
+$alto-div: 80%;
 $radio-borde: 10px;
 $margen-superior: 15px;
 $margen-inferior: 10px;
@@ -17,40 +17,50 @@ $tamano-fuente: 15px;
 // Menú lateral
 .menu_lateral {
   background-color: $color-fondo-menu;
-  //para el mins de espacios
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  //para el mins de espacios 
   @include espacio($margen-superior $margen-inferior, $margen-lateral);
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: $gap-menu;
-
+  //cada div es una caje de informacion de cada pareja
   div {
     display: grid;
     width: $ancho-div;
     height: $alto-div;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $color-fondo-div;
     border-radius: $radio-borde;
     grid-template-rows: repeat(2, 2fr);
-    margin-left: $margen-div;
-
+    justify-content: center;
+    align-items: center;
+    //centramos la imagen
     img {
       margin-top: $margen-inferior;
-      margin-left: $margen-div;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
       width: $ancho-div;
       border-radius: $radio-borde;
     }
-
+    //centramos el parrafo
     p {
       font-size: $tamano-fuente;
-      margin-top: $margen-inferior;
+      justify-content: center;
       text-align: center;
       margin: auto;
     }
   }
 }
 @media (max-width:800px) {
+  // ocultamos el menu lateral
   .menu_lateral {
-    display: none; // Ocultar el menú lateral en móviles por defecto
+    display: none; 
   }
   .titulo{
     display: none;
