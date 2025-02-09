@@ -1,0 +1,51 @@
+//variables
+$color-fondo-menu: rgb(236, 221, 221);
+$color-fondo-div: rgb(185, 159, 166);
+$ancho-div: 90%;
+$alto-div: 250px;
+$radio-borde: 10px;
+$margen-superior: 15px;
+$margen-inferior: 10px;
+$margen-lateral: 10px;
+$margen-div: 15px;
+$gap-menu: 20px;
+$tamano-fuente: 15px;
+
+
+.titulo{
+    text-align: center;
+}
+// Menú lateral
+.menu_lateral {
+  background-color: $color-fondo-menu;
+  //para el mins de espacios
+  @include espacio($margen-superior $margen-inferior, $margen-lateral);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: $gap-menu;
+
+  div {
+    display: grid;
+    width: $ancho-div;
+    height: $alto-div;
+    text-align: center;
+    background-color: $color-fondo-div;
+    border-radius: $radio-borde;
+    grid-template-rows: repeat(2, 2fr);
+    margin-left: $margen-div;
+
+    img {
+      margin-top: $margen-inferior;
+      margin-left: $margen-div;
+      width: $ancho-div;
+      border-radius: $radio-borde;
+    }
+
+    p {
+      font-size: $tamano-fuente;
+      margin-top: $margen-inferior;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}

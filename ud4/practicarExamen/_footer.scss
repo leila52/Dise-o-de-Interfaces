@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:rgb(166, 166, 197);
+    p {
+      margin: 0;
+    }
+  }
+  @media (max-width:800px) {
+    footer {
+      padding: 10px; // Reducir el espacio de los márgenes
+    }
+  }

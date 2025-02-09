@@ -1,0 +1,65 @@
+$valornulo: 0px;
+$colores: rgb(236, 6, 6), aquamarine, rgb(14, 119, 19), rgb(0, 24, 243), white, red;
+$ultimo_color: nth($colores, 5);
+$fondo_color: nth($colores, 3);
+$color: nth($colores, 1);
+$valor_cien: 100px;
+
+$color_fondo_noche: #555;
+$color_texto_noche: #ffffff;
+$color_fondo_dia: white;
+$color_texto_dia: black;
+$color_botones_noche: $color_fondo_noche;
+$color_botones_dia: #67aee8;
+$margen-boton: 10px;
+$relleno-boton: 10px 20px;
+$radio-boton: 5px;
+$transicion: 0.3s;
+
+$margen-div: 10px;
+$tamano-icono: 30px;
+body{
+    font-family: Arial, sans-serif;
+    margin: $valornulo;
+    padding: $valornulo;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fondo_color;
+    img{
+        width: $valor_cien;
+        height: auto;
+        margin-left: 100px;
+    }
+    h1{
+        margin-left: $margen-div;
+        color: $ultimo_color;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+}
+nav{
+    $valormargin:100%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $valornulo auto;
+}
+a{
+    width: 50%;
+    height: 35px;
+    justify-content: center;
+    background-color: $color;
+    align-items: center;
+    margin: 0 $margen-div;
+    text-decoration: none;
+    color: $ultimo_color;
+    //asi se centra
+    display: flex;
+}

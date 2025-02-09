@@ -1,0 +1,12 @@
+@mixin espacio($margen, $padding) {
+    margin: $margen;
+    padding: $padding;
+  }
+
+
+// 3. Importar Parciales
+@import "menu_superior.scss";
+@import "menu_lateral.scss";
+@import "contenido.scss";
+@import "footer.scss";
+
